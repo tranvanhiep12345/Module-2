@@ -34,7 +34,7 @@ arr.map(index => {
 
 console.log('Sau khi xóa 1 phần tử')
 function deleteStudent(indexSTD: Students){
-    arr = arr.filter((item,index)=> index ==2)
+    arr = arr.filter((item,indexSTD)=> indexSTD == 2)
     // arr.splice(indexSTD, 1)
 }
 deleteStudent(2)

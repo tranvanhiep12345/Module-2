@@ -1,27 +1,16 @@
 var Employee = /** @class */ (function () {
-    function Employee(name, gender, dob) {
+    function Employee(name, gender, dob, email, phone) {
         this.name = name;
         this.gender = gender;
         this.dob = dob;
+        this.email = email;
+        this.phone = phone;
     }
     return Employee;
 }());
-function displayOne(employ) {
-    // console.table(`Name: ${employ.name}, Gender: ${employ.gender}, Date of Birth:${employ.dob}`)
-    console.table(employ);
-}
-displayOne(new Employee('Hiep', 'Nam', '09-09-2001'));
-var arr = [];
-arr.push(new Employee('David', 'Nam', '02-04-1997'));
-arr.push(new Employee('Myra', 'Nu', '06-08-1999'));
-arr.push(new Employee('Eddie', 'Nu', '07-09-1995'));
-arr.map(function (index) {
-    displayOne(index);
-});
-function addEmployee(employ) {
-    arr.push(employ);
-}
-// function deleteEmployee(employ:Employee){
-//     arr = arr.filter((item,index)=> index !== employ)
-//     arr.splice(employ, 1)
-// }
+var employ1 = new Employee('David', 'Nam', '02-04-1997', 'david@gmail.com', '092378126');
+var employ2 = new Employee('Myra', 'Nu', '06-08-1999', 'myra@gmail.com', '092235234');
+var employ3 = new Employee('Eddie', 'Nu', '07-09-1995', 'eddie@gmail.com', '092384897');
+var employ4 = new Employee('Hiep', 'Nam', '09-09-2001', 'hiep@gmail.com', '091246831');
+var arr = [employ1, employ2, employ3, employ4];
+console.table(arr);
