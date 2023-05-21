@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var point2d_1 = require("./point2d");
+var point3d_1 = require("./point3d");
+var point2D = new point2d_1.Point2D(3, 3);
+var point3D = new point3d_1.Point3d(2, 2, 2);
+console.log(point2D);
+console.log(point3D);
+console.log(point3D.getXYZ());
+point3D.setXYZ(1, 2, 3);
+console.log(point3D);
